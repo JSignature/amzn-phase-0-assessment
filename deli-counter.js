@@ -7,17 +7,16 @@ const takeANumber = (arr, name) => {
    console.log(`Welcome, ${name}. You are number ${arr.indexOf(name) + 1} in line.`)
 }
 
-
 const line = arr => {
     if (arr.length === 0 ) {
-        console.log("The line is currently empty.")
+        return "The line is currently empty."
     } 
 
     else {
     numArr = []
     for (const element of arr) numArr.push(`${arr.indexOf(element) + 1}. ${element}`)
 
-    console.log(`"The line is currently: ${numArr.join(' ')}"`)
+    return `"The line is currently: ${numArr.join(' ')}"`
     }   
 }
 
